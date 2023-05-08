@@ -1,0 +1,12 @@
+[project]
+name = 'new_year'
+version = '0.1.0'
+description = 'Calculates the current Gregorian and Jalali dates along with the number of days remaining until the new year.'
+requires-python = '>=3.10'
+dependencies = [
+    'jdatetime'
+]
+
+[project.scripts]
+date_now = 'new_year.main:main'
+until_new_year = 'new_year.main:until_new_year'
